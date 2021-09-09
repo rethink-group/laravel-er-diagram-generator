@@ -5,6 +5,7 @@ namespace BeyondCode\ErdGenerator;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use phpDocumentor\GraphViz\Graph;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Str;
 use phpDocumentor\GraphViz\Node;
 use \Illuminate\Database\Eloquent\Model as EloquentModel;
 
@@ -171,7 +172,7 @@ class GraphBuilder
             $label = (new \ReflectionClass($pivotClass))->getShortName();
             $pivotTable = $eloquentRelation->getTable();
             if ($label == "Pivot") {
-                $label = \Str::studly($pivotTable);
+                $label = Str::studly($pivotTable);
             }
             $this->addNodeToGraph($pivotModel, $pivotTable, $label);
 
