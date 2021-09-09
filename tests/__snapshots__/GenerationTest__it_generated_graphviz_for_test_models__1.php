@@ -2,8 +2,6 @@
 Inspecting model relations.
 
  1/4 [▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░]  25%
- 2/4 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░]  50%
- 3/4 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░]  75%
  4/4 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 100%digraph "G" {
 style="filled"
 bgcolor="#F7F7F7"
@@ -134,7 +132,7 @@ fontname="Helvetica Neue"
 ]
 "comment_user" [
 label=<<table width="100%" height="100%" border="0" margin="0" cellborder="1" cellspacing="0" cellpadding="10">
-<tr width="100%"><td width="100%" bgcolor="#d3d3d3"><font color="#333333">Pivot</font></td></tr>
+<tr width="100%"><td width="100%" bgcolor="#d3d3d3"><font color="#333333">CommentUser</font></td></tr>
 </table>>
 margin="0"
 shape="rectangle"

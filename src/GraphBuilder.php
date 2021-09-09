@@ -170,6 +170,9 @@ class GraphBuilder
             $pivotModel->setTable($eloquentRelation->getTable());
             $label = (new \ReflectionClass($pivotClass))->getShortName();
             $pivotTable = $eloquentRelation->getTable();
+            if ($label == "Pivot") {
+                $label = \Str::studly($pivotTable);
+            }
             $this->addNodeToGraph($pivotModel, $pivotTable, $label);
 
             $pivotModelNode = $this->graph->findNode($pivotTable);
